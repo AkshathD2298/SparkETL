@@ -28,9 +28,13 @@ output/sales_parquet/
 │   └── part-*.parquet
 └── region=West/
     └── part-*.parquet
+
+    
 Each region=XYZ folder contains Parquet data files for that region.
 
 To read this output back in PySpark, you can do:
+
+
 df = spark.read.parquet("output/sales_parquet")
 df.show()
 
