@@ -36,6 +36,7 @@ To read this output back in PySpark, you can do:
 
 
 df = spark.read.parquet("output/sales_parquet")
+
 df.show()
 
 
