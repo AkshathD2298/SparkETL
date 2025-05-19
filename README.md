@@ -16,3 +16,23 @@
    ```
 
 4. Output Parquet files will be in `output/sales_parquet/`.
+
+   When your ETL script runs, it writes Parquet data in this structure:
+
+output/sales_parquet/
+├── region=East/
+│   └── part-*.parquet
+├── region=North/
+│   └── part-*.parquet
+├── region=South/
+│   └── part-*.parquet
+└── region=West/
+    └── part-*.parquet
+Each region=XYZ folder contains Parquet data files for that region.
+
+To read this output back in PySpark, you can do:
+df = spark.read.parquet("output/sales_parquet")
+df.show()
+
+
+
