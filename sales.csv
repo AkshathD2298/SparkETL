@@ -1,0 +1,6 @@
+order_id,product,category,price,quantity,order_date,region
+1,Pen,Stationery,1.5,10,2023-05-10,East
+2,Notebook,Stationery,2.5,5,2023-05-11,West
+3,Apple,Fruit,0.5,30,2023-05-12,East
+4,Milk,Dairy,,10,2023-05-13,North
+5,Orange,Fruit,0.8,,2023-05-14,West
